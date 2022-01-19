@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 300;
+}
+
+.main_div{
+    /* width: 100vw; */
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: hsl(298, 61%, 80%);
+} 
+
+.inner-div{
+    width: 60vw;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: #fff;
+    padding: 3rem 8rem;
+    border-radius: 1rem;
+    box-shadow: 0 1rem 1rem -0.7rem rgba(0,0,0,0.4);
+    /* text-align: center; */
+}
+
+.inner-div h1{
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin: 1rem 0 4rem 0;
+    text-align: center;
+    color: rgb(255, 0, 119);
+}
+
+
+.inner-div h3{
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+#Exit{
+    padding: 1rem 3rem;
+    font-size: 2rem;
+    font-weight: 800;
+    display: inline-block;
+    position: relative;
+    margin: auto;
+    color: black;
+    background-color: transparent;
+    border: 1px solid #962c96;
+    margin-top: 4rem;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+#Exit:hover{
+    transition: 0.5s;
+    color: white;
+    background-color: #962c96;
+}
+
+#ShowScore{
+    background-color: white;
+    margin-top: 3rem;
+    padding: 3rem 4rem;
+    font-weight: 600;
+    font-size: 50px;
+    text-align: center;
+}
+
+
+.showquestion{
+    
+    font-size: 20px;
+}
+
+.questionshow{
+    font-weight: 600;
+}
+
+.showname_quiz{
+    font-weight: 800;
+    /* font-size: 50px; */
+}

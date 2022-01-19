@@ -1,0 +1,362 @@
+/* Navigation Bar */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+.main{
+    width: 100vw;
+    border-bottom: 2px solid black;
+    background-color: rgb(169 245 248);
+    /* background-color: snow; */
+}
+.heading{
+    font-size: 50px;
+    font-weight: 700;
+    margin: 9px 91px 5px 5px;
+}
+.heading:hover{
+    cursor: pointer;
+}
+.ul{
+    display: flex;
+    list-style: none;
+    padding: 5px 5px;
+    font-size: 30px;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.log{
+    display: flex;
+    list-style: none;
+    padding: 5px 5px;
+    position: relative;
+    top: -65px;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 0px 22px;
+    float: right;
+}
+.logout{
+    display:block;
+    /* display: inline-block;
+    text-decoration: none;
+    color: darkred;
+    border: 1px solid darkred;
+    padding: 12px 34px;
+    font-size: 15px;
+    background: transparent;
+    position: relative;
+    cursor: pointer; */
+    /* visibility: hidden; */
+}
+/* .logout:hover{
+    border: 1px solid darkred;
+    background: darkred;
+    color: white;
+    transition: 1s;
+} */
+.list{
+    padding: 3px 30px;
+    position: relative;
+    top: 24px;
+    font-size: 27px;
+    font-weight: 580;
+}
+@media (max-width:1000px){
+    .main{
+        border-bottom: 2px solid black;
+        height: 300px;
+    }
+    .heading{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        left: 50px;
+        text-align: center;
+        align-items: center;
+    }
+    .ul{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .list{
+        padding: 6px 5px;
+    }
+    .log{
+        position: relative;
+        top: 30px;
+        padding: 2px 5px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        float: none;
+    }
+}
+/* Main Page Style */
+/* Play Button */
+.play{
+    align-items: center;
+    font-size: 30px;
+    border-radius: 10px;
+    outline: none;
+    padding: 0px 15px;
+    box-shadow: 0px 3px 7px #2b2a2a;
+}
+.play:hover{
+    box-shadow: 1px 1px 13px rgb(12, 12, 12);
+    background-color: rgb(207, 243, 231);
+}
+/* Boxes */
+.newbox{
+    border: 3px solid black;
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+    width:526px;
+    height: 400px;
+    position: relative;
+    top: 50px;
+    left: 5px;
+    margin: 5px 23px 9px 7px;   
+} 
+.pythimg{
+    width: 520px;
+    height: 300px;
+    background: url('/img/python.jpg') no-repeat center center/cover;
+}
+.full{
+    display: flex;
+    flex-wrap: wrap;
+}
+.cprogimg{
+
+    width: 520px;
+    height: 300px;
+    background: url('/img/Cprog.jpg') no-repeat center center/cover;
+}
+/* user name */
+.user i{
+    position: relative;
+    /* left: 1250px; */
+    display: flex;
+    padding: 0px 10px;
+    top: 20px;
+    font-size: 30px;
+}
+.username{
+    position: absolute;
+    left: 50px;
+}
+
+/* ALL Boxes in mainpage */
+.grid{
+    margin: 30px 10px;
+    display: grid;
+    /* grid-template-rows: repeat(2,230px); for 2 rows */
+    grid-template-rows: repeat(3,250px);
+    grid-template-columns: repeat(4,1fr);
+
+    /* grid-gap: 40px; */ /* new Grid*/
+    grid-gap:96px ;
+}
+.grid1,.grid2,.grid3,.grid4,.grid5,.grid6,.grid7,.grid8,.grid9{
+border: 2px solid black;
+border-radius: 20px;
+}
+/* Boxes Content */
+.grid1,.grid2,.grid3,.grid4,.grid5,.grid6,.grid7,.grid8,.grid9{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.grid1 h1,.grid2 h1 ,.grid3 h1,.grid4 h1,.grid5 h1,.grid6 h1,.grid7 h1,.grid8 h1,.grid9 h1{
+    position: relative;
+    font-size: 30px;
+    width: 100%;
+    border-top: 2px solid black;
+}
+.grid1 input,.grid2 input ,.grid3 input,.grid4 input,.grid5 input,.grid6 input,.grid7 input,.grid8 input,.grid9 input{
+    /* position: relative;
+    font-size: 25px;
+    border-radius:5px;
+    font-weight: bold; */
+    display: inline-block;
+    text-decoration: none;
+    color: darkred;
+    border: 1px solid darkred;
+    border-radius: 10px;
+    padding: 12px 34px;
+    font-size: 15px;
+    background: transparent;
+    position: relative;
+    top: -3px;
+    cursor: pointer;
+}
+
+.grid1 input:hover,.grid2 input:hover,.grid3 input:hover,.grid4 input:hover,.grid5 input:hover,.grid6 input:hover,.grid7 input:hover,.grid8 input:hover,.grid9 input:hover{
+    /* cursor: pointer;
+    box-shadow: 1px 1px 4px #1e5ca8; */
+    border: 1px solid darkred;
+    background: darkred;
+    color: white;
+    transition: 1s;
+}
+/* Images inside the boxes */
+.Pythonimg{
+    width: 300px;
+    height: 300px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    background: url('../img/Pythonlogo.jpg') no-repeat center center/cover;
+}
+.C-Programmingimg{
+    width: 300px;
+    height: 300px;
+    border-top-right-radius: 19px;
+    border-top-left-radius: 19px;
+    background: url('../img/Cprog.jpg') no-repeat center center/cover;
+}
+.JavaScriptimg{
+    width: 300px;
+    height: 300px;
+    border-top-right-radius: 19px;
+    border-top-left-radius: 19px;
+    background: url('../img/JsLogo.png') no-repeat center center/cover;
+}
+.Javaimg{
+    width: 300px;
+    /* width: 350px; */  /* For new grid*/
+    height: 300px;
+    border-top-right-radius: 19px;
+    border-top-left-radius: 19px;
+    background: url('../img/javalogo.png') no-repeat center center/cover;
+}
+.Cppimg{
+    width: 300px;
+    /* width: 350px; */  /* For new grid*/
+    height: 300px;
+    border-top-right-radius: 19px;
+    border-top-left-radius: 19px;
+    background: url('../img/CppLogo.png') no-repeat center center/cover;
+}
+.Htmlimg{
+    width: 300px;
+    /* width: 350px; */  /* For new grid*/
+    height: 300px;
+    border-top-right-radius: 19px;
+    border-top-left-radius: 19px;
+    background: url('../img/HtmlLogo.png') no-repeat center center/cover;
+}
+
+.Phpimg{
+    width: 300px;
+    /* width: 350px; */  /* For new grid*/
+    height: 300px;
+    border-top-right-radius: 19px;
+    border-top-left-radius: 19px;
+    background: url('../img/PhpLogo.png') no-repeat center center/cover;
+}
+.Cssimg{
+    width: 300px;
+    /* width: 350px; */  /* For new grid*/
+    height: 300px;
+    border-top-right-radius: 19px;
+    border-top-left-radius: 19px;
+    background: url('../img/CssLogo.png') no-repeat center center/cover;
+}
+.Dbmsimg{
+    width: 300px;
+    /* width: 350px; */  /* For new grid*/
+    height: 300px;
+    border-top-right-radius: 19px;
+    border-top-left-radius: 19px;
+    background: url('../img/DbmsLogo.jpg') no-repeat center center/cover;
+}
+
+
+
+/* Start Quizzes CSS*/
+.container{
+    display: flex;
+    justify-content: center;
+}
+.start{
+    position: absolute;
+    top: 300px;
+    border-radius: 30px;
+    padding: 5px 5px;
+    outline: none;
+    background-color: #74b9ff;
+    font-size:2rem;
+    display: block;
+    margin: auto;
+    border: none;
+    text-transform: uppercase;
+}
+.start:hover{
+    background-color:#0984e4;
+    cursor: pointer;
+}
+.start a{
+    color: black;
+    text-decoration: none;
+}
+
+
+
+.myname{
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 5px;
+    font-style: italic;
+}
+.myname:hover{
+    background: darkred;
+    /* width: 280px; */
+    width: auto;
+    color: white;
+    transition: 1s;
+}
+
+
+
+.notplayed{
+    display: flex;
+    position: relative;
+    top: 250px;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 800;
+}
+.notplayed input{
+    display: inline-block;
+    text-decoration: none;
+    color: darkred;
+    border: 1px solid darkred;
+    border-radius: 10px;
+    padding: 12px 34px;
+    font-size: 15px;
+    background: transparent;
+    position: relative;
+    top: -3px;
+    cursor: pointer;
+}
+.notplayed input:hover{
+    border: 1px solid darkred;
+    background: darkred;
+    color: white;
+    transition: 1s;
+}

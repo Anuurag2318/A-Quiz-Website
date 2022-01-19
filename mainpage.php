@@ -105,9 +105,7 @@ if (!isset($_SESSION['username'])) {
     <footer>
         <section class="footer">
             <h4>About Us</h4>
-            <p>Hello! Thank you for visiting our website. We hope you liked it ;)<br>"We" are
-                Siddhi Khade, Anurag Tiwari, Asmita Kharat & Pranjal Sawant.
-                <br>A special mention to our mentor, Ms. Vaishali Hirlekar!
+            <p>Hello! Thank you for visiting our website. We hope you liked it :)
             </p>
         </section>
     </footer>
